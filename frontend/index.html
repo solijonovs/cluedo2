@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cluedo Game Frontend</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>Cluedo Mystery Game</h1>
+        <p>Move through the mansion, make suggestions, track clues, and solve the murder.</p>
+      </div>
+      <button id="newGameBtn">New Game</button>
+    </header>
+
+    <main class="layout">
+      <section class="card board-card">
+        <h2>Mansion Board</h2>
+        <div id="board" class="board"></div>
+      </section>
+
+      <section class="card">
+        <h2>Game Status</h2>
+        <p><strong>Your Character:</strong> <span id="playerCharacter"></span></p>
+        <p><strong>Current Room:</strong> <span id="currentRoom"></span></p>
+        <p><strong>Game Message:</strong></p>
+        <div id="messageBox" class="message-box"></div>
+
+        <h3>Your Cards</h3>
+        <ul id="handList"></ul>
+
+        <h3>Move</h3>
+        <div id="movementButtons" class="button-grid"></div>
+      </section>
+
+      <section class="card">
+        <h2>Suggestion</h2>
+        <label for="suspectSelect">Suspect</label>
+        <select id="suspectSelect"></select>
+
+        <label for="weaponSelect">Weapon</label>
+        <select id="weaponSelect"></select>
+
+        <button id="suggestBtn">Make Suggestion</button>
+
+        <h2>Accusation</h2>
+        <label for="accuseSuspectSelect">Suspect</label>
+        <select id="accuseSuspectSelect"></select>
+
+        <label for="accuseWeaponSelect">Weapon</label>
+        <select id="accuseWeaponSelect"></select>
+
+        <label for="accuseRoomSelect">Room</label>
+        <select id="accuseRoomSelect"></select>
+
+        <button id="accuseBtn" class="danger">Make Accusation</button>
+      </section>
+
+      <section class="card notebook-card">
+        <h2>Deduction Notebook</h2>
+        <h3>Seen Cards</h3>
+        <ul id="seenCards"></ul>
+
+        <h3>Unknown Cards</h3>
+        <ul id="unknownCards"></ul>
+
+        <h3>Suggestion / Refutation History</h3>
+        <div id="historyList" class="history"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
