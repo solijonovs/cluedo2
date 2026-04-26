@@ -72,26 +72,6 @@ cd KingSolijonov_Project2_Part2_SourceCode
 python3 cluedo_game_part2.py
 ```
 
-## How to Push to GitHub
-
-If this is a new GitHub repository:
-
-```bash
-git init
-git add .
-git commit -m "Add Cluedo Part 2 project"
-git branch -M main
-git remote add origin https://github.com/solijonovs/Cluedo.git
-git push -u origin main
-```
-
-If the remote already exists:
-
-```bash
-git add .
-git commit -m "Add Cluedo Part 2 project"
-git push
-```
 
 ## Suggested Demo Flow for Screen Recording
 1. Start the game.
